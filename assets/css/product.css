@@ -1,0 +1,91 @@
+.sidebar h4 {
+  margin-bottom: 39px;
+}
+.sidebar .widget_title {
+  position: relative;
+}
+.sidebar .widget_title::after {
+  content: url(../images/icons/down.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.product-wrapper {
+  --bs-gutter-x: 70px;
+}
+
+.shop_container {
+  --bs-gutter-x: 39px;
+  --bs-gutter-y: 40px;
+}
+
+.item-box-style {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.item-box-style .img {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  position: relative;
+}
+.item-box-style .img::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: block;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-25deg);
+  transition: all 0.75s;
+}
+.item-box-style .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.item-box-style:hover .img::before {
+  left: 125%;
+  z-index: 3;
+}
+.item-box-style .item-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.item-box-style .item-actions .choose-quantity {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.item-box-style .item-actions .choose-quantity input {
+  max-width: 44px;
+  text-align: center;
+}
+.item-box-style .item-actions .choose-quantity .btn-minus,
+.item-box-style .item-actions .choose-quantity .btn-plus {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.item-box-style .item-actions .choose-quantity .btn-minus:hover,
+.item-box-style .item-actions .choose-quantity .btn-plus:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.item-box-style .item-actions .choose-quantity .btn-minus {
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/icons/minus.svg);
+}
+.item-box-style .item-actions .choose-quantity .btn-plus {
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/icons/plus.svg);
+}
+.item-box-style .item-actions .btn {
+  padding: 12px 26px;
+  text-wrap: nowrap;
+}

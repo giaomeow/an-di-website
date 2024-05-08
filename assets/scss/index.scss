@@ -1,0 +1,71 @@
+@import "./vavaiable";
+@import "./mixin";
+.section-category-list {
+  .category-list {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 36px;
+    .category-list-item {
+      transition: all 0.3s;
+      @include subheading_h6(500);
+      .item-img {
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 16px;
+      }
+      .item-title {
+        text-align: center;
+        transition: all 0.3s;
+      }
+      &:hover {
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        .item-img {
+          img {
+            animation: zommImg 5s linear;
+          }
+        }
+        .item-title {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}
+
+.section-popular-collection {
+  .slick-list {
+    margin: 0 -12px;
+  }
+  .slick-slide > div {
+    padding: 0 12px;
+  }
+  .slick-arrow {
+    transform: translateY(-50%);
+    --webkie-tranform: translateY(-50%);
+  }
+}
+
+.section-best-seller {
+  .slick-list {
+    margin: 0 -19.5px;
+  }
+  .slick-slide > div {
+    padding: 0 19.5px;
+  }
+  .slick-arrow {
+    transform: translateY(-150%);
+    --webkie-tranform: translateY(-150%);
+  }
+}
+
+.section-love-us {
+  .row {
+    --bs-gutter-x: 41px;
+  }
+}
+.section-blog-latest {
+  .row {
+    --bs-gutter-x: 44px;
+  }
+}
