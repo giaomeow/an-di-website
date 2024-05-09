@@ -75,8 +75,6 @@ PAGE JS
     var scroll = $(window).scrollTop();
 
     if (scroll >= 299) {
-      console.log("first");
-
       $("header.fixed-top").addClass("nav-fixed");
     } else {
       $("header.fixed-top").removeClass("nav-fixed");
@@ -157,19 +155,18 @@ PAGE JS
       $(".header_sticky_bar").addClass("d-none");
     }
 
-    // let animationWrapper = $(".staggered-animation-wrap");
-    // let main = $(".main_content");
+    let animationWrapper = $(".staggered-animation-wrap");
+    let main = $(".main_content");
 
-    // if (scroll >= mainOffsetTop && animationWrapper.length === 0) {
-    //   main.css("paddingTop", "255px");
-    // } else {
-    //   main.css("paddingTop", "0px"); // Thay "null" bằng "" để xoá thuộc tính
-    // }
+    if (scroll >= mainOffsetTop && animationWrapper.length === 0) {
+      main.css("paddingTop", "300px");
+    } else {
+      main.css("paddingTop", "0px"); // Thay "null" bằng "" để xoá thuộc tính
+    }
   });
 
   var setHeight = function () {
     var height_header = $(".header_wrap").height();
-    console.log(height_header);
     $(".header_sticky_bar").css({ height: height_header });
   };
 
@@ -475,6 +472,33 @@ PAGE JS
         autoplayTimeout: $carousel.data("autoplay-timeout"),
         smartSpeed: $carousel.data("smart-speed"),
         responsive: $carousel.data("responsive"),
+        margin: 39,
+      });
+    });
+    $(".releted_blog_slider").each(function () {
+      var $carousel = $(this);
+      $carousel.owlCarousel({
+        dots: $carousel.data("dots"),
+        loop: $carousel.data("loop"),
+        items: $carousel.data("items"),
+        margin: $carousel.data("margin"),
+        mouseDrag: $carousel.data("mouse-drag"),
+        touchDrag: $carousel.data("touch-drag"),
+        autoHeight: $carousel.data("autoheight"),
+        center: $carousel.data("center"),
+        nav: $carousel.data("nav"),
+        rewind: $carousel.data("rewind"),
+        navText: [
+          '<i class="ion-ios-arrow-left"></i>',
+          '<i class="ion-ios-arrow-right"></i>',
+        ],
+        autoplay: $carousel.data("autoplay"),
+        animateIn: $carousel.data("animate-in"),
+        animateOut: $carousel.data("animate-out"),
+        autoplayTimeout: $carousel.data("autoplay-timeout"),
+        smartSpeed: $carousel.data("smart-speed"),
+        responsive: $carousel.data("responsive"),
+        margin: 44,
       });
     });
   }

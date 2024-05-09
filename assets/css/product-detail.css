@@ -1,0 +1,21 @@
+.container .row:first-child {
+  --bs-gutter-x: 62px;
+}
+
+.quantity .minus {
+  padding-left: 0;
+}
+
+.btn-addtocart {
+  width: 326px;
+  font-weight: 500;
+}
+
+.vertical_gallery .slick-list {
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
+
+.nav-tabs {
+  border-bottom: 1px #a2a2a2 solid;
+}
