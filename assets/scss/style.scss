@@ -52,6 +52,7 @@ body {
   color: $base-color;
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 a {
   color: #292b2c;
@@ -1477,6 +1478,8 @@ input {
   left: 0;
   top: 0;
   z-index: 1041;
+  width: 100vw;
+
   -webkit-animation: slideInDown 0.65s cubic-bezier(0.23, 1, 0.32, 1);
   -moz-animation: slideInDown 0.65s cubic-bezier(0.23, 1, 0.32, 1);
   -o-animation: slideInDown 0.65s cubic-bezier(0.23, 1, 0.32, 1);
@@ -7573,5 +7576,114 @@ hr {
       padding: 12px 26px;
       text-wrap: nowrap;
     }
+  }
+}
+@media only screen and (max-width: 1279.98px) {
+  .scrollup {
+    right: 60px;
+  }
+  body,
+  .main_content,
+  header {
+    overflow-x: hidden !important;
+  }
+  .item-box-style .item-actions .btn {
+    opacity: 1 !important;
+    margin: 0 auto;
+  }
+  .item-box-style .item-actions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1023.98px) {
+  .slick-next {
+    right: -17px;
+  }
+  .slick-prev {
+    left: -17px;
+  }
+  .item-box-style {
+    gap: 0;
+  }
+  .item-box-style .desc {
+    gap: 0;
+  }
+  footer button[type="submit"] {
+    opacity: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .heading_h2,
+  .heading_h1 {
+    font-size: 28px;
+  }
+  .heading_h2 {
+    margin-bottom: 30px;
+  }
+  .subheading_h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+  .subheading_h4 {
+    font-size: 18px;
+  }
+  .subheading_h5 {
+    font-size: 16px;
+  }
+
+  .middle-header {
+    padding: 0;
+  }
+  header .bottom_header > .container > .row .col-3 {
+    width: 76px;
+  }
+  header .bottom_header > .container > .row .col-9 {
+    width: calc(100% - 76px);
+    padding-left: 0;
+  }
+  .light_arrow .carousel-control-next,
+  .light_arrow .carousel-control-prev {
+    display: none;
+  }
+  .carousel-template .slick-dots {
+    bottom: -35px;
+  }
+  .footer-icons .footer-icons-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-icons .payment-methods {
+    gap: 10px;
+  }
+  .footer-icons .social-links {
+    gap: 30px;
+    padding-right: 0;
+    justify-content: center;
+    border-right: unset;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $brand-color;
+  }
+  .bottom_header {
+    margin-bottom: 0 !important;
+  }
+  .rating_wrap .rating {
+    margin-bottom: 0;
+  }
+  .vertical_gallery .product_gallery_item.slick-slider .slick-slide {
+    margin-bottom: 6px;
+  }
+  .vertical_gallery #pr_item_gallery {
+    width: 17%;
+  }
+  .pr_detail .product_price {
+    margin-bottom: 16px;
+  }
+  .scrollup {
+    right: 0;
   }
 }

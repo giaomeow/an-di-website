@@ -146,6 +146,7 @@ PAGE JS
 
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
+    var windowWidth = window.innerWidth;
     let mainOffsetTop = $(".main_content").offset().top;
 
     if (scroll >= 299) {
@@ -158,7 +159,11 @@ PAGE JS
     let animationWrapper = $(".staggered-animation-wrap");
     let main = $(".main_content");
 
-    if (scroll >= mainOffsetTop && animationWrapper.length === 0) {
+    if (
+      scroll >= mainOffsetTop &&
+      animationWrapper.length === 0 &&
+      windowWidth >= 768
+    ) {
       main.css("paddingTop", "300px");
     } else {
       main.css("paddingTop", "0px"); // Thay "null" bằng "" để xoá thuộc tính
@@ -935,6 +940,18 @@ $(document).ready(function () {
     slidesToShow: 4,
     adaptiveHeight: true,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
   };
   $(".carousel-1").slick({
     ...slickCarouselTemplate,

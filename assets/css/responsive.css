@@ -284,6 +284,14 @@
     width: 100%;
     padding: 30px 20px;
   }
+  .section.pb_80,
+  .pb_80 {
+    padding-bottom: 40px;
+  }
+  .section.pt_80,
+  .pt_80 {
+    padding-top: 40px;
+  }
 }
 
 /* -------------------------------------------------
@@ -574,7 +582,7 @@
     float: left;
   }
   .navbar .navbar-nav.attr-nav li .nav-link {
-    padding: 20px 10px;
+    padding: 0px 10px;
   }
   .navbar .navbar-nav.attr-nav li .nav-link.search_trigger,
   .navbar .navbar-nav.attr-nav li .nav-link.cart_trigger {
@@ -911,7 +919,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -146px;
+    bottom: -80px;
     z-index: 9;
     right: 0;
     width: 100%;
@@ -1001,6 +1009,58 @@
   }
   .login_form {
     margin-bottom: 10px;
+  }
+  .bottom_header ul a {
+    color: #252a2c;
+  }
+  #navCatContent ul {
+    flex-direction: column;
+  }
+  .bottom_header ul li {
+    padding: 0 0;
+  }
+  .bottom_header ul a {
+    padding: 15px 15px;
+  }
+  .bottom_header .navbar-collapse ul {
+    padding-top: 30px;
+    justify-content: unset !important;
+    gap: 10px;
+  }
+  /* .bottom-header .navbar button,
+  .bottom_header .navbar-toggler {
+    margin-top: 0 !important;
+  } */
+  header .navbar {
+    height: 100%;
+  }
+  header .navbar-expand-lg .navbar {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  header .navbar ul {
+    display: flex !important;
+    align-items: center;
+  }
+  .bottom_header ul a::after {
+    bottom: 0;
+  }
+  .header_wrap.nav-fixed {
+    box-shadow: none !important;
+  }
+  .middle-header {
+    padding: 0;
+  }
+  .section.pb_52,
+  .pb_52 {
+    padding-bottom: 20px;
+  }
+  .section.pt_52,
+  .pt_52,
+  .footer_top.pt_52 {
+    padding-top: 20px;
   }
 }
 /* -------------------------------------------------
@@ -1392,9 +1452,7 @@
     padding: 2px 14px;
     font-size: 12px;
   }
-  p {
-    margin-bottom: 15px;
-  }
+
   .section.pb_70,
   .pb_70 {
     padding-bottom: 15px;
@@ -1701,9 +1759,7 @@
   h6 {
     font-size: 14px;
   }
-  p {
-    margin-bottom: 15px;
-  }
+
   .sidebar_menu {
     padding: 30px 20px 20px;
     width: 320px;

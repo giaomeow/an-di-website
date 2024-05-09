@@ -29,3 +29,9 @@
 .section-contact-us-page .contact_style3 .contact_text span {
   margin-bottom: 16px;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .contact_style3 {
+    padding: 7px 20px;
+  }
+}
