@@ -2,34 +2,30 @@
   max-width: 628px;
   margin: 0 auto;
 }
-
-.contact_style3 {
-  margin-top: 24px;
-  box-shadow: none;
-  border: 1px solid #af9574;
-  margin-bottom: 0;
-}
-.contact_style3 .contact-icon {
-  margin-bottom: 8px;
-}
-.contact_style3 .contact_text span {
-  margin-bottom: 16px;
-}
-
-.contact-info-wrapper {
+.section-contact-us-page .contact-info-wrapper {
   --bs-gutter-x: 16px;
 }
-
-.contact_text a {
+.section-contact-us-page .contact_text a {
   color: #282b2d;
 }
-
-input,
-textarea {
+.section-contact-us-page input,
+.section-contact-us-page textarea {
   padding: 10.5px 16px;
   border: 1px solid #acacac;
   border-radius: 8px;
   line-height: 1;
   width: 100%;
   background-color: transparent !important;
+}
+.section-contact-us-page .contact_style3 {
+  margin-top: 24px;
+  box-shadow: none;
+  border: 1px solid #af9574;
+  margin-bottom: 0;
+}
+.section-contact-us-page .contact_style3 .contact-icon {
+  margin-bottom: 8px;
+}
+.section-contact-us-page .contact_style3 .contact_text span {
+  margin-bottom: 16px;
 }
