@@ -45,7 +45,7 @@ PAGE JS
           "-webkit-animation-delay": AnimationDelay,
           "-moz-animation-delay": AnimationDelay,
           "animation-delay": AnimationDelay,
-          opacity: 0,
+          opacity: 1,
         });
 
         var ckTrigger = trigger ? trigger : ckElement;
